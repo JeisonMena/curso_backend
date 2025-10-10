@@ -1,2582 +1,687 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MaterailM Free Bootstrap Admin Template by WrapPixel</title>
-  <link rel="shortcut icon" type="image/png" href="../assets/template/images/logos/favicon.png" />
-  <link rel="stylesheet" href="../assets/template/css/styles.min.css" />
-</head>
-
-<body>
-  <!--  Body Wrapper -->
-  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
-    data-sidebar-position="fixed" data-header-position="fixed">
-
-    <!--  App Topstrip -->
-    <div class="app-topstrip bg-dark py-3 px-4 w-100 d-lg-flex align-items-center justify-content-between">
-      <div class="d-none d-sm-flex align-items-center justify-content-center gap-9 mb-3 mb-lg-0">
-        <a class="d-flex justify-content-center" href="https://www.wrappixel.com/" target="_blank">
-          <img src="../assets/template/images/logos/logo-wrappixel.svg" alt="" width="147">
-        </a>
-
-        <div class="d-none d-xl-flex align-items-center gap-3 border-start border-white border-opacity-25 ps-9">
-          <a href="https://www.wrappixel.com/templates/category/bootstrap-templates/"
-            class="link-hover d-flex align-items-center gap-2 border-0 text-white lh-sm fs-4">
-            <iconify-icon class="fs-6" icon="solar:window-frame-linear"></iconify-icon>
-            Templates
-          </a>
-          <a href="https://support.wrappixel.com/"
-            class="link-hover d-flex align-items-center gap-2 border-0 text-white lh-sm fs-4">
-            <iconify-icon class="fs-6" icon="solar:question-circle-linear"></iconify-icon>
-            Help
-          </a>
-          <a href="https://www.wrappixel.com/hire-us/"
-            class="link-hover d-flex align-items-center gap-2 border-0 text-white lh-sm fs-4">
-            <iconify-icon class="fs-6" icon="solar:case-round-linear"></iconify-icon>
-            Hire Us
-          </a>
-        </div>
-      </div>
-
-      <div class="d-lg-flex align-items-center gap-3">
-        <h3 class="text-linear-gradient mb-3 mb-lg-0 fs-3 text-uppercase text-center fw-semibold">Checkout Pro Version
-        </h3>
-        <div class="d-sm-flex align-items-center justify-content-center gap-8">
-          <div class="d-flex align-items-center justify-content-center gap-8 mb-3 mb-sm-0">
-            <div class="dropdown d-flex">
-              <a class="btn live-preview-drop fs-4 lh-sm btn-outline-primary rounded border-white border border-opacity-40 text-white d-flex align-items-center gap-2 px-3 py-2"
-                href="javascript:void(0)" id="drop3" data-bs-toggle="dropdown" aria-expanded="false">
-                Live Preview
-                <iconify-icon class="fs-6" icon="solar:alt-arrow-down-linear"></iconify-icon>
-              </a>
-              <div class="dropdown-menu p-3 dropdown-menu-end dropdown-menu-animate-up overflow-hidden rounded"
-                aria-labelledby="drop3">
-                <div class="message-body">
-                  <a target="_blank"
-                    href="https://www.wrappixel.com/templates/materialm-admin-dashboard-template/?ref=376#demos"
-                    class="dropdown-item rounded fw-normal d-flex align-items-center gap-6">
-                    <img src="../assets/template/images/svgs/bt-cat-icon.svg" width="20" alt="bootstrap" />
-                    Bootstrap Version
-                  </a>
-                  <a target="_blank"
-                    href="https://www.wrappixel.com/templates/materialm-material-angular-dashboard-template/?ref=376#demos"
-                    class="dropdown-item rounded fw-normal d-flex align-items-center gap-6">
-                    <img src="../assets/template/images/svgs/angular-cat-icon.svg" width="18" alt="angular" />
-                    Angular Version
-                  </a>
-                  <a target="_blank"
-                    href="https://www.wrappixel.com/templates/materialm-vuejs-vuetify-admin-template/?ref=376#demos"
-                    class="dropdown-item rounded fw-normal d-flex align-items-center gap-6">
-                    <img src="../assets/template/images/svgs/vue-cat-icon.svg" width="18" alt="vue" />
-                    VueJs Version
-                  </a>
-                  <a target="_blank"
-                    href="https://www.wrappixel.com/templates/materialm-next-js-tailwind-dashboard-template/?ref=376#demos"
-                    class="dropdown-item rounded fw-normal d-flex align-items-center gap-6">
-                    <img src="../assets/template/images/svgs/next-cat-icon.svg" width="18" alt="next" />
-                    NextJs Version
-                  </a>
-                  <a target="_blank"
-                    href="https://www.wrappixel.com/templates/materialm-next-js-tailwind-dashboard-template/?ref=376#demos"
-                    class="dropdown-item rounded fw-normal d-flex align-items-center gap-6">
-                    <img src="../assets/template/images/svgs/tailwindcss.svg" width="18" alt="tailwind" />
-                    Tailwind Version
-                  </a>
-                  <a target="_blank" href="https://www.wrappixel.com/templates/materialm-vuetify-nuxt-js-admin-template/?ref=376#demos" class="dropdown-item rounded fw-normal d-flex align-items-center gap-6">
-                    <img src="../assets/template/images/svgs/nuxt-cat-icon.svg" width="18" alt="tailwind">
-                    NuxtJs Version
-                  </a>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Dashboard - SB Admin</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="../assets/template/css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Start Bootstrap</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
                 </div>
-              </div>
-            </div>
-            <a target="_blank"
-              class="get-pro-btn rounded btn btn-primary d-flex align-items-center gap-2 fs-4 border-0 px-3 py-2"
-              href="https://www.wrappixel.com/templates/materialm-admin-dashboard-template/?ref=376">
-              <iconify-icon class="fs-5" icon="solar:crown-linear"></iconify-icon>
-              Get Pro
-            </a>
-          </div>
-          <a target="_blank"
-            class="all-access-pass-btn rounded btn btn-primary d-flex align-items-center justify-content-center gap-2 fs-4 border-0 text-black px-3 py-2"
-            href="https://www.wrappixel.com/all-access-pass/?ref=376">
-            <iconify-icon class="fs-5" icon="solar:bolt-linear"></iconify-icon>
-            All Access Pass
-          </a>
-        </div>
-      </div>
-
-    </div>
-    <!-- Sidebar Start -->
-    <aside class="left-sidebar">
-      <!-- Sidebar scroll-->
-      <div>
-        <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="./index.html" class="text-nowrap logo-img">
-            <img src="../assets/template/images/logos/logo.svg" alt="" />
-          </a>
-          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
-            <i class="ti ti-x fs-8"></i>
-          </div>
-        </div>
-        <!-- Sidebar navigation-->
-        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
-          <ul id="sidebarnav">
-            <li class="nav-small-cap">
-              <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
-              <span class="hide-menu">Home</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./index.html" aria-expanded="false">
-                <iconify-icon icon="solar:atom-line-duotone"></iconify-icon>
-                <span class="hide-menu">Dashboard</span>
-              </a>
-            </li>
-            <!-- ---------------------------------- -->
-            <!-- Dashboard -->
-            <!-- ---------------------------------- -->
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/index2.html" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:widget-add-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">eCommerce</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/index.html" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:chart-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Analytics</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/index3.html" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:layers-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">CRM</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:home-angle-line-duotone"></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Front Pages</span>
-                </div>
-                
-              </a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/frontend-landingpage.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Homepage</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
                 </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/frontend-aboutpage.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">About Us</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/frontend-blogpage.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Blog</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/frontend-blogdetailpage.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Blog Details</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/frontend-contactpage.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Contact Us</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/frontend-portfoliopage.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Portfolio</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/frontend-pricingpage.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Pricing</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <span class="sidebar-divider lg"></span>
-            </li>
-            <li class="nav-small-cap">
-              <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
-              <span class="hide-menu">UI</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
-                <iconify-icon icon="solar:layers-minimalistic-bold-duotone"></iconify-icon>
-                <span class="hide-menu">Buttons</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
-                <iconify-icon icon="solar:danger-circle-line-duotone"></iconify-icon>
-                <span class="hide-menu">Alerts</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
-                <iconify-icon icon="solar:bookmark-square-minimalistic-line-duotone"></iconify-icon>
-                <span class="hide-menu">Card</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
-                <iconify-icon icon="solar:file-text-line-duotone"></iconify-icon>
-                <span class="hide-menu">Forms</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
-                <iconify-icon icon="solar:text-field-focus-line-duotone"></iconify-icon>
-                <span class="hide-menu">Typography</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:cardholder-line-duotone"></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Ui Elements</span>
-                </div>
-                
-              </a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-accordian.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Accordian</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-badge.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Badge</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-dropdowns.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Dropdowns</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-modals.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Modals</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-tab.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Tab</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-tooltip-popover.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Tooltip & Popover</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-notification.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Notification</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-progressbar.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Progressbar</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-pagination.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Pagination</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-bootstrap-ui.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Bootstrap UI</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-breadcrumb.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Breadcrumb</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-offcanvas.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Offcanvas</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-lists.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Lists</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-grid.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Grid</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-carousel.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Carousel</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-scrollspy.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Scrollspy</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-spinner.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Spinner</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-link.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Link</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:star-fall-minimalistic-2-line-duotone"></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Components</span>
-                </div>
-                
-              </a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/component-sweetalert.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Sweet Alert</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/component-nestable.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Nestable</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/component-noui-slider.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Noui slider</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/component-rating.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Rating</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/component-toastr.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Toastr</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:bookmark-square-minimalistic-line-duotone"></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Cards</span>
-                </div>
-                
-              </a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-cards.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Basic Cards</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-card-customs.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Custom Cards</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-card-weather.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Weather Cards</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/ui-card-draggable.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Draggable Cards</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <span class="sidebar-divider lg"></span>
-            </li>
-
-            <li class="nav-small-cap">
-              <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
-              <span class="hide-menu">Apps</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:cart-3-line-duotone"></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Ecommerce</span>
-                </div>
-                
-              </a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/eco-shop.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Shop</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/eco-shop-detail.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Details</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/eco-product-list.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">List</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/eco-checkout.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Checkout</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/eco-add-product.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Add Product</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/eco-edit-product.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Edit Product</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:widget-4-line-duotone"></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Blog</span>
-                </div>
-                
-              </a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/blog-posts.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Blog Posts</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/blog-detail.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Blog Details</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/page-user-profile.html"
-                aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:shield-user-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">User Profile</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/app-email.html" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:letter-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Email</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/app-calendar.html" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:calendar-mark-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Calendar</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/app-kanban.html" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:airbuds-case-minimalistic-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Kanban</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/app-chat.html" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:chat-round-line-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Chat</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/app-notes.html" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:document-text-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Notes</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/app-contact.html" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:iphone-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Contact Table</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/app-contact2.html" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:phone-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Contact List</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/app-invoice.html" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:bill-list-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Invoice</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-
-            <li>
-              <span class="sidebar-divider lg"></span>
-            </li>
-
-            <li class="nav-small-cap">
-              <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
-              <span class="hide-menu">Pages</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:cardholder-line-duotone"></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Widgets</span>
-                </div>
-                
-              </a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/widgets-cards.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Cards</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/widgets-banners.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Banner</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/widgets-charts.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Charts</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/widgets-feeds.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Feeds</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/widgets-apps.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Apps</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/widgets-data.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Data</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:cloud-file-line-duotone"></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Pages</span>
-                </div>
-                
-              </a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/pages-animation.html"
-                    aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Animation</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/pages-search-result.html"
-                    aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Search Result</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/pages-gallery.html"
-                    aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Gallery</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/pages-treeview.html"
-                    aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Treeview</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/pages-block-ui.html"
-                    aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Block-Ui</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/pages-session-timeout.html"
-                    aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Session Timeout</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/page-pricing.html"
-                    aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Pricing</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/page-faq.html" aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">FAQ</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/page-account-settings.html"
-                    aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Account Setting</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/landingpage/index.html"
-                    aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Landingpage</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-
-            <li>
-              <span class="sidebar-divider lg"></span>
-            </li>
-            <li class="nav-small-cap">
-              <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
-              <span class="hide-menu">Forms</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:text-selection-line-duotone"></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Elements</span>
-                </div>
-                
-              </a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-inputs.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Forms Input</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-input-groups.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Input Groups</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-input-grid.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Input Grid</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-checkbox-radio.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Checkbox & Radios</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-bootstrap-switch.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Bootstrap Switch</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-select2.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Select2</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:clapperboard-play-line-duotone"></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Form Addons</span>
-                </div>
-                
-              </a>
-              <ul aria-expanded="false" class="collapse first-level">
-
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-dropzone.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Dropzone</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-mask.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Form Mask</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-typeahead.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Form Typehead</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:password-minimalistic-input-line-duotone"></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Forms Inputs</span>
-                </div>
-                
-              </a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-basic.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Basic Form</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-horizontal.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Form Horizontal</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-actions.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Form Actions</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-row-separator.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Row Separator</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-bordered.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Form Bordered</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-detail.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Form Detail</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-striped-row.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Striped Rows</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-floating-input.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Form Floating Input</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:shield-warning-line-duotone"></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Validation</span>
-                </div>
-                
-              </a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-bootstrap-validation.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Bootstrap Validation</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-custom-validation.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Custom Validation</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:waterdrop-line-duotone"></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Form Pickers</span>
-                </div>
-                
-              </a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-picker-colorpicker.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Colorpicker</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-picker-bootstrap-rangepicker.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Rangepicker</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-picker-bootstrap-datepicker.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">BT Datepicker</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-picker-material-datepicker.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">MT Datepicker</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:clapperboard-edit-line-duotone"></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Form Editors</span>
-                </div>
-                
-              </a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-editor-quill.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Quill Editor</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-editor-tinymce.html">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Tinymce Edtor</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-wizard.html" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:archive-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Form Wizard</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/form-repeater.html"
-                aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:repeat-one-minimalistic-bold-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Form Repeater</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-
-            <li>
-              <span class="sidebar-divider lg"></span>
-            </li>
-            <li class="nav-small-cap">
-              <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
-              <span class="hide-menu">Bootstrap Tables</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/table-basic.html" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:tablet-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Basic Table</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/table-dark-basic.html"
-                aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:tablet-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Dark Table</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/table-sizing.html" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:tablet-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Sizing Table</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/table-layout-coloured.html"
-                aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:tablet-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Coloured Table</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-
-            <li>
-              <span class="sidebar-divider lg"></span>
-            </li>
-            <li class="nav-small-cap">
-              <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
-              <span class="hide-menu">Datatables</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/table-datatable-basic.html"
-                aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:align-horizonta-spacing-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Basic</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/table-datatable-api.html"
-                aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:align-horizonta-spacing-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">API</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/table-datatable-advanced.html"
-                aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:align-horizonta-spacing-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Advanced</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-
-            <li>
-              <span class="sidebar-divider lg"></span>
-            </li>
-            <li class="nav-small-cap">
-              <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
-              <span class="hide-menu">Charts</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/chart-apex-line.html"
-                aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:chart-square-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Line Chart</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/chart-apex-area.html"
-                aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:pie-chart-3-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Area Chart</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/chart-apex-bar.html"
-                aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:chart-2-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Bar Chart</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/chart-apex-pie.html"
-                aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:pie-chart-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Pie Chart</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/chart-apex-radial.html"
-                aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:chart-square-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Radial Chart</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/chart-apex-radar.html"
-                aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:round-graph-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Radar Chart</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-
-
-            <li>
-              <span class="sidebar-divider lg"></span>
-            </li>
-            <li class="nav-small-cap">
-              <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
-              <span class="hide-menu">Auth</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./authentication-login.html" aria-expanded="false">
-                <iconify-icon icon="solar:login-3-line-duotone"></iconify-icon>
-                <span class="hide-menu">Login</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
-                <iconify-icon icon="solar:user-plus-rounded-line-duotone"></iconify-icon>
-                <span class="hide-menu">Register</span>
-              </a>
-            </li>
-
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between has-arrow" href="javascript:void(0)" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:shield-user-line-duotone"></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Auth Pages</span>
-                </div>
-                
-              </a>
-              <ul aria-expanded="false" class="collapse first-level">
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/authentication-login.html"
-                    aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Side Login</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/authentication-register.html"
-                    aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Side Register</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/authentication-forgot-password.html"
-                    aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Side Forgot Pwd</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/authentication-forgot-password2.html"
-                    aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Boxed Forgot Pwd</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/authentication-two-steps.html"
-                    aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Side Two Steps</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/authentication-two-steps2.html"
-                    aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Boxed Two Steps</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/authentication-error.html"
-                    aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Error</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-                <li class="sidebar-item">
-                  <a class="sidebar-link justify-content-between" target="_blank"
-                    href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/authentication-maintenance.html"
-                    aria-expanded="false">
-                    <div class="d-flex align-items-center gap-3">
-                      <span class="d-flex">
-                        <span class="icon-small"></span>
-                      </span>
-                      <span class="hide-menu">Maintenance</span>
-                    </div>
-                    <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <span class="sidebar-divider lg"></span>
-            </li>
-            <li class="nav-small-cap">
-              <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
-              <span class="hide-menu">Extra</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link justify-content-between" target="_blank"
-                href="https://bootstrapdemos.wrappixel.com/materialM/dist/main/icon-solar.html" aria-expanded="false">
-                <div class="d-flex align-items-center gap-3">
-                  <span class="d-flex">
-                    <iconify-icon icon="solar:sticker-smile-circle-2-line-duotone" class=""></iconify-icon>
-                  </span>
-                  <span class="hide-menu">Solar Icon</span>
-                </div>
-                <span class="hide-menu badge bg-secondary-subtle text-secondary fs-1 py-1">Pro</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
-                <iconify-icon icon="solar:sticker-smile-circle-2-line-duotone"></iconify-icon>
-                <span class="hide-menu">Tabler Icon</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
-                <iconify-icon icon="solar:planet-3-line-duotone"></iconify-icon>
-                <span class="hide-menu">Sample Page</span>
-              </a>
-            </li>
-          </ul>
-          <div
-            class="unlimited-access d-flex align-items-center hide-menu bg-secondary-subtle position-relative mb-7 mt-4 p-3 rounded-3">
-            <div class="flex-shrink-0">
-              <h6 class="fw-semibold fs-4 mb-6 text-dark w-75 lh-sm">Check Pro Version</h6>
-              <a href="https://www.wrappixel.com/templates/materialm-admin-dashboard-template/?ref=376#demos" target="_blank"
-                class="btn btn-secondary fs-2 fw-semibold lh-sm">Check</a>
-            </div>
-            <div class="unlimited-access-img">
-              <img src="../assets/template/images/backgrounds/rupee.png" alt="" class="img-fluid">
-            </div>
-          </div>
-        </nav>
-        <!-- End Sidebar navigation -->
-      </div>
-      <!-- End Sidebar scroll-->
-    </aside>
-    <!--  Sidebar End -->
-    <!--  Main wrapper -->
-    <div class="body-wrapper">
-      <!--  Header Start -->
-      <header class="app-header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <ul class="navbar-nav">
-            <li class="nav-item d-block d-xl-none">
-              <a class="nav-link sidebartoggler " id="headerCollapse" href="javascript:void(0)">
-                <i class="ti ti-menu-2"></i>
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link " href="javascript:void(0)" id="drop1" data-bs-toggle="dropdown" aria-expanded="false">
-                <iconify-icon icon="solar:bell-linear" class="fs-6"></iconify-icon>
-                <div class="notification bg-primary rounded-circle"></div>
-              </a>
-              <div class="dropdown-menu dropdown-menu-animate-up" aria-labelledby="drop1">
-                <div class="message-body">
-                  <a href="javascript:void(0)" class="dropdown-item">
-                    Item 1
-                  </a>
-                  <a href="javascript:void(0)" class="dropdown-item">
-                    Item 2
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
-            <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
-              <a href="https://www.wrappixel.com/templates/materialm-admin-dashboard-template/?ref=376#demos" target="_blank"
-                class="btn btn-primary">Check Pro Template</a>
-              <li class="nav-item dropdown">
-                <a class="nav-link " href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <img src="../assets/template/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
-                </a>
-                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
-                  <div class="message-body">
-                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                      <i class="ti ti-user fs-6"></i>
-                      <p class="mb-0 fs-3">My Profile</p>
-                    </a>
-                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                      <i class="ti ti-mail fs-6"></i>
-                      <p class="mb-0 fs-3">My Account</p>
-                    </a>
-                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                      <i class="ti ti-list-check fs-6"></i>
-                      <p class="mb-0 fs-3">My Task</p>
-                    </a>
-                    <a href="./authentication-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
-                  </div>
-                </div>
-              </li>
             </ul>
-          </div>
         </nav>
-      </header>
-      <!--  Header End -->
-      <div class="body-wrapper-inner">
-        <div class="container-fluid">
-          <!--  Row 1 -->
-          <div class="row">
-            <div class="col-lg-8 d-flex align-items-strech">
-              <div class="card w-100">
-                <div class="card-body">
-                  <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
-                    <div class="mb-3 mb-sm-0">
-                      <h5 class="card-title fw-semibold">Sales Profit</h5>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Core</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Interface</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Layouts
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Pages
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        Authentication
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="login.html">Login</a>
+                                            <a class="nav-link" href="register.html">Register</a>
+                                            <a class="nav-link" href="password.html">Forgot Password</a>
+                                        </nav>
+                                    </div>
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        Error
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="401.html">401 Page</a>
+                                            <a class="nav-link" href="404.html">404 Page</a>
+                                            <a class="nav-link" href="500.html">500 Page</a>
+                                        </nav>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">Addons</div>
+                            <a class="nav-link" href="charts.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Charts
+                            </a>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Tables
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                      <select class="form-select">
-                        <option value="1">March 2025</option>
-                        <option value="2">April 2025</option>
-                        <option value="3">May 2025</option>
-                        <option value="4">June 2025</option>
-                      </select>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Start Bootstrap
                     </div>
-                  </div>
-                  <div id="sales-profit"></div>
-                </div>
-              </div>
+                </nav>
             </div>
-            <div class="col-lg-4">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="card bg-danger-subtle shadow-none w-100">
-                    <div class="card-body">
-                      <div class="d-flex mb-10 pb-1 justify-content-between align-items-center">
-                        <div class="d-flex align-items-center gap-6">
-                          <div
-                            class="rounded-circle-shape bg-danger px-3 py-2 rounded-pill d-inline-flex align-items-center justify-content-center">
-                            <iconify-icon icon="solar:users-group-rounded-bold-duotone"
-                              class="fs-7 text-white"></iconify-icon>
-                          </div>
-                          <h6 class="mb-0 fs-4 fw-medium text-muted">
-                            Total followers
-                          </h6>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Dashboard</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Dashboard</li>
+                        </ol>
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-primary text-white mb-4">
+                                    <div class="card-body">Primary Card</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-warning text-white mb-4">
+                                    <div class="card-body">Warning Card</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-success text-white mb-4">
+                                    <div class="card-body">Success Card</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-danger text-white mb-4">
+                                    <div class="card-body">Danger Card</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="dropdown dropstart">
-                          <a href="javascript:void(0)" class="text-muted" id="dropdownMenuButton"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="ti ti-dots-vertical fs-6"></i>
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li>
-                              <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                  class="fs-4 ti ti-plus"></i>Add</a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                  class="fs-4 ti ti-edit"></i>Edit</a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                  class="fs-4 ti ti-trash"></i>Delete</a>
-                            </li>
-                          </ul>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-area me-1"></i>
+                                        Area Chart Example
+                                    </div>
+                                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-bar me-1"></i>
+                                        Bar Chart Example
+                                    </div>
+                                    <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="row align-items-end justify-content-between">
-                        <div class="col-5">
-                          <h2 class="mb-6 fs-8">4,562</h2>
-                          <span class="badge rounded-pill border border-muted fw-bold text-muted fs-2 py-1">+23% last
-                            month</span>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                DataTable Example
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Garrett Winters</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td>63</td>
+                                            <td>2011/07/25</td>
+                                            <td>$170,750</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ashton Cox</td>
+                                            <td>Junior Technical Author</td>
+                                            <td>San Francisco</td>
+                                            <td>66</td>
+                                            <td>2009/01/12</td>
+                                            <td>$86,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cedric Kelly</td>
+                                            <td>Senior Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>2012/03/29</td>
+                                            <td>$433,060</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Airi Satou</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td>33</td>
+                                            <td>2008/11/28</td>
+                                            <td>$162,700</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brielle Williamson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>New York</td>
+                                            <td>61</td>
+                                            <td>2012/12/02</td>
+                                            <td>$372,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Herrod Chandler</td>
+                                            <td>Sales Assistant</td>
+                                            <td>San Francisco</td>
+                                            <td>59</td>
+                                            <td>2012/08/06</td>
+                                            <td>$137,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rhona Davidson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>Tokyo</td>
+                                            <td>55</td>
+                                            <td>2010/10/14</td>
+                                            <td>$327,900</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Colleen Hurst</td>
+                                            <td>Javascript Developer</td>
+                                            <td>San Francisco</td>
+                                            <td>39</td>
+                                            <td>2009/09/15</td>
+                                            <td>$205,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sonya Frost</td>
+                                            <td>Software Engineer</td>
+                                            <td>Edinburgh</td>
+                                            <td>23</td>
+                                            <td>2008/12/13</td>
+                                            <td>$103,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jena Gaines</td>
+                                            <td>Office Manager</td>
+                                            <td>London</td>
+                                            <td>30</td>
+                                            <td>2008/12/19</td>
+                                            <td>$90,560</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Quinn Flynn</td>
+                                            <td>Support Lead</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>2013/03/03</td>
+                                            <td>$342,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Charde Marshall</td>
+                                            <td>Regional Director</td>
+                                            <td>San Francisco</td>
+                                            <td>36</td>
+                                            <td>2008/10/16</td>
+                                            <td>$470,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Haley Kennedy</td>
+                                            <td>Senior Marketing Designer</td>
+                                            <td>London</td>
+                                            <td>43</td>
+                                            <td>2012/12/18</td>
+                                            <td>$313,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tatyana Fitzpatrick</td>
+                                            <td>Regional Director</td>
+                                            <td>London</td>
+                                            <td>19</td>
+                                            <td>2010/03/17</td>
+                                            <td>$385,750</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michael Silva</td>
+                                            <td>Marketing Designer</td>
+                                            <td>London</td>
+                                            <td>66</td>
+                                            <td>2012/11/27</td>
+                                            <td>$198,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Paul Byrd</td>
+                                            <td>Chief Financial Officer (CFO)</td>
+                                            <td>New York</td>
+                                            <td>64</td>
+                                            <td>2010/06/09</td>
+                                            <td>$725,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gloria Little</td>
+                                            <td>Systems Administrator</td>
+                                            <td>New York</td>
+                                            <td>59</td>
+                                            <td>2009/04/10</td>
+                                            <td>$237,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bradley Greer</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td>41</td>
+                                            <td>2012/10/13</td>
+                                            <td>$132,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dai Rios</td>
+                                            <td>Personnel Lead</td>
+                                            <td>Edinburgh</td>
+                                            <td>35</td>
+                                            <td>2012/09/26</td>
+                                            <td>$217,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jenette Caldwell</td>
+                                            <td>Development Lead</td>
+                                            <td>New York</td>
+                                            <td>30</td>
+                                            <td>2011/09/03</td>
+                                            <td>$345,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Yuri Berry</td>
+                                            <td>Chief Marketing Officer (CMO)</td>
+                                            <td>New York</td>
+                                            <td>40</td>
+                                            <td>2009/06/25</td>
+                                            <td>$675,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Caesar Vance</td>
+                                            <td>Pre-Sales Support</td>
+                                            <td>New York</td>
+                                            <td>21</td>
+                                            <td>2011/12/12</td>
+                                            <td>$106,450</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Doris Wilder</td>
+                                            <td>Sales Assistant</td>
+                                            <td>Sidney</td>
+                                            <td>23</td>
+                                            <td>2010/09/20</td>
+                                            <td>$85,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Angelica Ramos</td>
+                                            <td>Chief Executive Officer (CEO)</td>
+                                            <td>London</td>
+                                            <td>47</td>
+                                            <td>2009/10/09</td>
+                                            <td>$1,200,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gavin Joyce</td>
+                                            <td>Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>42</td>
+                                            <td>2010/12/22</td>
+                                            <td>$92,575</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jennifer Chang</td>
+                                            <td>Regional Director</td>
+                                            <td>Singapore</td>
+                                            <td>28</td>
+                                            <td>2010/11/14</td>
+                                            <td>$357,650</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brenden Wagner</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>28</td>
+                                            <td>2011/06/07</td>
+                                            <td>$206,850</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fiona Green</td>
+                                            <td>Chief Operating Officer (COO)</td>
+                                            <td>San Francisco</td>
+                                            <td>48</td>
+                                            <td>2010/03/11</td>
+                                            <td>$850,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shou Itou</td>
+                                            <td>Regional Marketing</td>
+                                            <td>Tokyo</td>
+                                            <td>20</td>
+                                            <td>2011/08/14</td>
+                                            <td>$163,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michelle House</td>
+                                            <td>Integration Specialist</td>
+                                            <td>Sidney</td>
+                                            <td>37</td>
+                                            <td>2011/06/02</td>
+                                            <td>$95,400</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Suki Burks</td>
+                                            <td>Developer</td>
+                                            <td>London</td>
+                                            <td>53</td>
+                                            <td>2009/10/22</td>
+                                            <td>$114,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Prescott Bartlett</td>
+                                            <td>Technical Author</td>
+                                            <td>London</td>
+                                            <td>27</td>
+                                            <td>2011/05/07</td>
+                                            <td>$145,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gavin Cortez</td>
+                                            <td>Team Leader</td>
+                                            <td>San Francisco</td>
+                                            <td>22</td>
+                                            <td>2008/10/26</td>
+                                            <td>$235,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Martena Mccray</td>
+                                            <td>Post-Sales support</td>
+                                            <td>Edinburgh</td>
+                                            <td>46</td>
+                                            <td>2011/03/09</td>
+                                            <td>$324,050</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Unity Butler</td>
+                                            <td>Marketing Designer</td>
+                                            <td>San Francisco</td>
+                                            <td>47</td>
+                                            <td>2009/12/09</td>
+                                            <td>$85,675</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Howard Hatfield</td>
+                                            <td>Office Manager</td>
+                                            <td>San Francisco</td>
+                                            <td>51</td>
+                                            <td>2008/12/16</td>
+                                            <td>$164,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hope Fuentes</td>
+                                            <td>Secretary</td>
+                                            <td>San Francisco</td>
+                                            <td>41</td>
+                                            <td>2010/02/12</td>
+                                            <td>$109,850</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vivian Harrell</td>
+                                            <td>Financial Controller</td>
+                                            <td>San Francisco</td>
+                                            <td>62</td>
+                                            <td>2009/02/14</td>
+                                            <td>$452,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Timothy Mooney</td>
+                                            <td>Office Manager</td>
+                                            <td>London</td>
+                                            <td>37</td>
+                                            <td>2008/12/11</td>
+                                            <td>$136,200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jackson Bradshaw</td>
+                                            <td>Director</td>
+                                            <td>New York</td>
+                                            <td>65</td>
+                                            <td>2008/09/26</td>
+                                            <td>$645,750</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Olivia Liang</td>
+                                            <td>Support Engineer</td>
+                                            <td>Singapore</td>
+                                            <td>64</td>
+                                            <td>2011/02/03</td>
+                                            <td>$234,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bruno Nash</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td>38</td>
+                                            <td>2011/05/03</td>
+                                            <td>$163,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sakura Yamamoto</td>
+                                            <td>Support Engineer</td>
+                                            <td>Tokyo</td>
+                                            <td>37</td>
+                                            <td>2009/08/19</td>
+                                            <td>$139,575</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Thor Walton</td>
+                                            <td>Developer</td>
+                                            <td>New York</td>
+                                            <td>61</td>
+                                            <td>2013/08/11</td>
+                                            <td>$98,540</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Finn Camacho</td>
+                                            <td>Support Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>47</td>
+                                            <td>2009/07/07</td>
+                                            <td>$87,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Serge Baldwin</td>
+                                            <td>Data Coordinator</td>
+                                            <td>Singapore</td>
+                                            <td>64</td>
+                                            <td>2012/04/09</td>
+                                            <td>$138,575</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Zenaida Frank</td>
+                                            <td>Software Engineer</td>
+                                            <td>New York</td>
+                                            <td>63</td>
+                                            <td>2010/01/04</td>
+                                            <td>$125,250</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Zorita Serrano</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>56</td>
+                                            <td>2012/06/01</td>
+                                            <td>$115,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jennifer Acosta</td>
+                                            <td>Junior Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>43</td>
+                                            <td>2013/02/01</td>
+                                            <td>$75,650</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cara Stevens</td>
+                                            <td>Sales Assistant</td>
+                                            <td>New York</td>
+                                            <td>46</td>
+                                            <td>2011/12/06</td>
+                                            <td>$145,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hermione Butler</td>
+                                            <td>Regional Director</td>
+                                            <td>London</td>
+                                            <td>47</td>
+                                            <td>2011/03/21</td>
+                                            <td>$356,250</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lael Greer</td>
+                                            <td>Systems Administrator</td>
+                                            <td>London</td>
+                                            <td>21</td>
+                                            <td>2009/02/27</td>
+                                            <td>$103,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td>30</td>
+                                            <td>2010/07/14</td>
+                                            <td>$86,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shad Decker</td>
+                                            <td>Regional Director</td>
+                                            <td>Edinburgh</td>
+                                            <td>51</td>
+                                            <td>2008/11/13</td>
+                                            <td>$183,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michael Bruce</td>
+                                            <td>Javascript Developer</td>
+                                            <td>Singapore</td>
+                                            <td>29</td>
+                                            <td>2011/06/27</td>
+                                            <td>$183,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Donna Snider</td>
+                                            <td>Customer Support</td>
+                                            <td>New York</td>
+                                            <td>27</td>
+                                            <td>2011/01/25</td>
+                                            <td>$112,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                        <div class="col-5">
-                          <div id="total-followers" class="rounded-bars"></div>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="card bg-secondary-subtle shadow-none w-100">
-                    <div class="card-body">
-                      <div class="d-flex mb-10 pb-1 justify-content-between align-items-center">
-                        <div class="d-flex align-items-center gap-6">
-                          <div
-                            class="rounded-circle-shape bg-secondary px-3 py-2 rounded-pill d-inline-flex align-items-center justify-content-center">
-                            <iconify-icon icon="solar:wallet-2-line-duotone" class="fs-7 text-white"></iconify-icon>
-                          </div>
-                          <h6 class="mb-0 fs-4 fw-medium text-muted">
-                            Total Income
-                          </h6>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
                         </div>
-                        <div class="dropdown dropstart">
-                          <a href="javascript:void(0)" class="text-muted" id="dropdownMenuButton"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="ti ti-dots-vertical fs-6"></i>
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li>
-                              <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                  class="fs-4 ti ti-plus"></i>Add</a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                  class="fs-4 ti ti-edit"></i>Edit</a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                  class="fs-4 ti ti-trash"></i>Delete</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="row align-items-center justify-content-between pt-4">
-                        <div class="col-5">
-                          <h2 class="mb-6 fs-8 text-nowrap">$6,280</h2>
-                          <span class="badge rounded-pill border border-muted fw-bold text-muted fs-2 py-1">+18% last
-                            month</span>
-                        </div>
-                        <div class="col-5">
-                          <div id="total-income"></div>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                </div>
-              </div>
+                </footer>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-8 d-flex align-items-stretch">
-              <div class="card w-100 overflow-hidden">
-                <div class="card-body pb-0">
-                  <h4 class="fs-4 mb-1 card-title">Popular Products</h4>
-                  <p class="mb-0 card-subtitle">Total 9k Visitors</p>
-                </div>
-                <div data-simplebar class="position-relative">
-                  <div class="table-responsive products-tabel" data-simplebar>
-                    <table class="table text-nowrap mb-0 align-middle table-hover">
-                      <thead class="fs-4">
-                        <tr>
-                          <th class="fs-3 px-4">Products</th>
-                          <th class="fs-3">Payment</th>
-                          <th class="fs-3">Status</th>
-                          <th class="fs-3"></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <div class="d-flex align-items-center product">
-                              <img src="../assets/template/images/products/s1.jpg" class="img-fluid flex-shrink-0 rounded"
-                                width="60" height="60" />
-                              <div class="ms-3 product-title">
-                                <h6 class="fs-3 mb-0 text-truncate-2">
-                                  iPhone 13 pro max-Pacific Blue-128GB storage
-                                </h6>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <h5 class="mb-0 fs-4">
-                              $180 <span class="text-muted">/499</span>
-                            </h5>
-                            <p class="text-muted mb-2">Partially paid</p>
-                            <div class="progress bg-light w-100" style="height: 4px">
-                              <div class="progress-bar bg-warning" role="progressbar" aria-label="Example 4px high"
-                                style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            <span
-                              class="badge rounded-pill fs-2 fw-medium bg-secondary-subtle text-secondary">Confirmed</span>
-                          </td>
-                          <td>
-                            <div class="dropdown dropstart">
-                              <a href="javascript:void(0)" class="text-muted" id="dropdownMenuButton"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="ti ti-dots-vertical fs-6"></i>
-                              </a>
-                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li>
-                                  <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                      class="fs-4 ti ti-plus"></i>Add</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                      class="fs-4 ti ti-edit"></i>Edit</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                      class="fs-4 ti ti-trash"></i>Delete</a>
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="d-flex align-items-center product">
-                              <img src="../assets/template/images/products/s2.jpg" class="img-fluid flex-shrink-0 rounded"
-                                width="60" height="60" />
-                              <div class="ms-3 product-title">
-                                <h6 class="fs-3 mb-0 text-truncate-2">
-                                  Apple MacBook Pro 13 inch-M1-8/256GB-space
-                                </h6>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <h5 class="mb-0 fs-4">
-                              $120 <span class="text-muted">/499</span>
-                            </h5>
-                            <p class="text-muted mb-2">Full paid</p>
-                            <div class="progress bg-light w-100" style="height: 4px">
-                              <div class="progress-bar bg-success" role="progressbar" aria-label="Example 4px high"
-                                style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            <span
-                              class="badge rounded-pill fs-2 fw-medium bg-success-subtle text-success">Confirmed</span>
-                          </td>
-                          <td>
-                            <div class="dropdown dropstart">
-                              <a href="javascript:void(0)" class="text-muted" id="dropdownMenuButton"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="ti ti-dots-vertical fs-6"></i>
-                              </a>
-                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li>
-                                  <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                      class="fs-4 ti ti-plus"></i>Add</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                      class="fs-4 ti ti-edit"></i>Edit</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                      class="fs-4 ti ti-trash"></i>Delete</a>
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="d-flex align-items-center product">
-                              <img src="../assets/template/images/products/s3.jpg" class="img-fluid flex-shrink-0 rounded"
-                                width="60" height="60" />
-                              <div class="ms-3 product-title">
-                                <h6 class="fs-3 mb-0 text-truncate-2">
-                                  PlayStation 5 DualSense Wireless Controller
-                                </h6>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <h5 class="mb-0 fs-4">
-                              $120 <span class="text-muted">/499</span>
-                            </h5>
-                            <p class="text-muted mb-2">Cancelled</p>
-                            <div class="progress bg-light w-100" style="height: 4px">
-                              <div class="progress-bar bg-danger" role="progressbar" aria-label="Example 4px high"
-                                style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            <span
-                              class="badge rounded-pill fs-2 fw-medium bg-danger-subtle text-danger">Cancelled</span>
-                          </td>
-                          <td>
-                            <div class="dropdown dropstart">
-                              <a href="javascript:void(0)" class="text-muted" id="dropdownMenuButton"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="ti ti-dots-vertical fs-6"></i>
-                              </a>
-                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li>
-                                  <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                      class="fs-4 ti ti-plus"></i>Add</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                      class="fs-4 ti ti-edit"></i>Edit</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                      class="fs-4 ti ti-trash"></i>Delete</a>
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="d-flex align-items-center product">
-                              <img src="../assets/template/images/products/s5.jpg" class="img-fluid flex-shrink-0 rounded"
-                                width="60" height="60" />
-                              <div class="ms-3 product-title">
-                                <h6 class="fs-3 mb-0 text-truncate-2">
-                                  Amazon Basics Mesh, Mid-Back, Swivel Office
-                                  De...
-                                </h6>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <h5 class="mb-0 fs-4">
-                              $120 <span class="text-muted">/499</span>
-                            </h5>
-                            <p class="text-muted mb-2">Partially paid</p>
-                            <div class="progress bg-light w-100" style="height: 4px">
-                              <div class="progress-bar bg-warning" role="progressbar" aria-label="Example 4px high"
-                                style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            <span
-                              class="badge rounded-pill fs-2 fw-medium bg-secondary-subtle text-secondary">Confirmed</span>
-                          </td>
-                          <td>
-                            <div class="dropdown dropstart">
-                              <a href="javascript:void(0)" class="text-muted" id="dropdownMenuButton"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="ti ti-dots-vertical fs-6"></i>
-                              </a>
-                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li>
-                                  <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                      class="fs-4 ti ti-plus"></i>Add</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                      class="fs-4 ti ti-edit"></i>Edit</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"><i
-                                      class="fs-4 ti ti-trash"></i>Delete</a>
-                                </li>
-                              </ul>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 d-flex align-items-stretch">
-              <div class="card w-100">
-                <div class="card-body">
-                  <div class="d-flex mb-3 justify-content-between align-items-center">
-                    <h4 class="mb-0 card-title">Earning Reports</h4>
-                    <div class="dropdown">
-                      <button id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
-                        class="rounded-circle btn-transparent rounded-circle btn-sm px-1 btn shadow-none">
-                        <i class="ti ti-dots-vertical fs-6"></i>
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="javascript:void(0)">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <ul class="list-unstyled mb-0">
-                    <li class="d-flex align-items-center justify-content-between py-10 border-bottom">
-                      <div class="d-flex align-items-center">
-                        <div
-                          class="rounded-circle-shape bg-primary-subtle me-3 rounded-pill d-inline-flex align-items-center justify-content-center">
-                          <iconify-icon icon="solar:card-line-duotone" class="fs-7 text-primary"></iconify-icon>
-                        </div>
-                        <div>
-                          <h6 class="mb-1 fs-3">Bank Transfer</h6>
-                          <p class="mb-0 fs-2 d-flex align-items-center gap-1">
-                            and +1 more<i class="ti ti-info-circle"></i></i>
-                          </p>
-                        </div>
-                      </div>
-                      <span
-                        class="badge rounded-pill fw-medium fs-2 d-flex align-items-center bg-success-subtle text-success text-end"><i
-                          class="ti ti-caret-up"></i>16.3%</span>
-                    </li>
-
-                    <li class="d-flex align-items-center justify-content-between py-10 border-bottom">
-                      <div class="d-flex align-items-center">
-                        <div
-                          class="rounded-circle-shape bg-danger-subtle me-3 rounded-pill d-inline-flex align-items-center justify-content-center">
-                          <iconify-icon icon="solar:wallet-2-line-duotone" class="fs-7 text-danger"></iconify-icon>
-                        </div>
-                        <div>
-                          <h6 class="mb-1 fs-3">Net Profit</h6>
-                          <p class="mb-0 fs-2 d-flex align-items-center gap-1">
-                            and +4 more<i class="ti ti-info-circle"></i></i>
-                          </p>
-                        </div>
-                      </div>
-                      <span
-                        class="badge rounded-pill fw-medium fs-2 d-flex align-items-center bg-success-subtle text-success text-end"><i
-                          class="ti ti-caret-up"></i>12.55%</span>
-                    </li>
-
-                    <li class="d-flex align-items-center justify-content-between py-10 border-bottom">
-                      <div class="d-flex align-items-center">
-                        <div
-                          class="rounded-circle-shape bg-secondary-subtle me-3 rounded-pill d-inline-flex align-items-center justify-content-center">
-                          <iconify-icon icon="solar:course-up-line-duotone" class="fs-7 text-secondary"></iconify-icon>
-                        </div>
-                        <div>
-                          <h6 class="mb-1 fs-3">Total Income</h6>
-                          <p class="mb-0 fs-2 d-flex align-items-center gap-1">
-                            and +4 more<i class="ti ti-info-circle"></i></i>
-                          </p>
-                        </div>
-                      </div>
-                      <span
-                        class="badge rounded-pill fw-medium fs-2 d-flex align-items-center bg-success-subtle text-success text-end"><i
-                          class="ti ti-caret-up"></i>12.55%</span>
-                    </li>
-
-                    <li class="d-flex align-items-center justify-content-between py-10 border-bottom">
-                      <div class="d-flex align-items-center">
-                        <div
-                          class="rounded-circle-shape bg-light me-3 rounded-pill d-inline-flex align-items-center justify-content-center">
-                          <iconify-icon icon="solar:waterdrops-line-duotone"
-                            class="fs-7 text-body-color"></iconify-icon>
-                        </div>
-                        <div>
-                          <h6 class="mb-1 fs-3">Total Expenses</h6>
-                          <p class="mb-0 fs-2 d-flex align-items-center gap-1">
-                            and +2 more<i class="ti ti-info-circle"></i></i>
-                          </p>
-                        </div>
-                      </div>
-                      <span
-                        class="badge rounded-pill fw-medium fs-2 d-flex align-items-center bg-success-subtle text-success text-end"><i
-                          class="ti ti-caret-up"></i>8.28%</span>
-                    </li>
-
-                    <li class="d-flex align-items-center justify-content-between py-10 border-bottom">
-                      <div class="d-flex align-items-center">
-                        <div
-                          class="rounded-circle-shape bg-warning-subtle me-3 rounded-pill d-inline-flex align-items-center justify-content-center">
-                          <iconify-icon icon="solar:waterdrops-line-duotone" class="fs-7 text-warning"></iconify-icon>
-                        </div>
-                        <div>
-                          <h6 class="mb-1 fs-3">Marketing</h6>
-                          <p class="mb-0 fs-2 d-flex align-items-center gap-1">
-                            and +3 more<i class="ti ti-info-circle"></i></i>
-                          </p>
-                        </div>
-                      </div>
-                      <span
-                        class="badge rounded-pill fw-medium fs-2 d-flex align-items-center bg-success-subtle text-success text-end"><i
-                          class="ti ti-caret-up"></i>9.25%</span>
-                    </li>
-                    <a href="javascript:void(0)" class="fs-4 mt-7 text-center d-block">View more markets</a>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="card overflow-hidden hover-img">
-                <div class="position-relative">
-                  <a href="javascript:void(0)">
-                    <img src="../assets/template/images/blog/blog-img1.jpg" class="card-img-top" alt="materialM-img">
-                  </a>
-                  <span
-                    class="badge text-bg-light text-dark fs-2 lh-sm mb-9 me-9 py-1 px-2 fw-semibold position-absolute bottom-0 end-0">2
-                    min Read</span>
-                  <img src="../assets/template/images/profile/user-3.jpg" alt="materialM-img"
-                    class="img-fluid rounded-circle position-absolute bottom-0 start-0 mb-n9 ms-9" width="40"
-                    height="40" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Georgeanna Ramero">
-                </div>
-                <div class="card-body p-4">
-                  <span class="badge text-bg-light fs-2 py-1 px-2 lh-sm  mt-3">Social</span>
-                  <a class="d-block my-4 fs-5 text-dark fw-semibold link-primary" href="">Garmins Instinct Crossover is
-                    a rugged hybrid smartwatch</a>
-                  <div class="d-flex align-items-center gap-4">
-                    <div class="d-flex align-items-center gap-2">
-                      <i class="ti ti-eye text-dark fs-5"></i>9,125
-                    </div>
-                    <div class="d-flex align-items-center gap-2">
-                      <i class="ti ti-message-2 text-dark fs-5"></i>3
-                    </div>
-                    <div class="d-flex align-items-center fs-2 ms-auto">
-                      <i class="ti ti-point text-dark"></i>Mon, Dec 19
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card overflow-hidden hover-img">
-                <div class="position-relative">
-                  <a href="javascript:void(0)">
-                    <img src="../assets/template/images/blog/blog-img2.jpg" class="card-img-top" alt="materialM-img">
-                  </a>
-                  <span
-                    class="badge text-bg-light text-dark fs-2 lh-sm mb-9 me-9 py-1 px-2 fw-semibold position-absolute bottom-0 end-0">2
-                    min Read</span>
-                  <img src="../assets/template/images/profile/user-2.jpg" alt="materialM-img"
-                    class="img-fluid rounded-circle position-absolute bottom-0 start-0 mb-n9 ms-9" width="40"
-                    height="40" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Georgeanna Ramero">
-                </div>
-                <div class="card-body p-4">
-                  <span class="badge text-bg-light fs-2 py-1 px-2 lh-sm  mt-3">Gadget</span>
-                  <a class="d-block my-4 fs-5 text-dark fw-semibold link-primary" href="">Intel loses bid to revive
-                    antitrust case
-                    against patent foe Fortress</a>
-                  <div class="d-flex align-items-center gap-4">
-                    <div class="d-flex align-items-center gap-2">
-                      <i class="ti ti-eye text-dark fs-5"></i>4,150
-                    </div>
-                    <div class="d-flex align-items-center gap-2">
-                      <i class="ti ti-message-2 text-dark fs-5"></i>38
-                    </div>
-                    <div class="d-flex align-items-center fs-2 ms-auto">
-                      <i class="ti ti-point text-dark"></i>Sun, Dec 18
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card overflow-hidden hover-img">
-                <div class="position-relative">
-                  <a href="javascript:void(0)">
-                    <img src="../assets/template/images/blog/blog-img3.jpg" class="card-img-top" alt="materialM-img">
-                  </a>
-                  <span
-                    class="badge text-bg-light text-dark fs-2 lh-sm mb-9 me-9 py-1 px-2 fw-semibold position-absolute bottom-0 end-0">2
-                    min Read</span>
-                  <img src="../assets/template/images/profile/user-3.jpg" alt="materialM-img"
-                    class="img-fluid rounded-circle position-absolute bottom-0 start-0 mb-n9 ms-9" width="40"
-                    height="40" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Georgeanna Ramero">
-                </div>
-                <div class="card-body p-4">
-                  <span class="badge text-bg-light fs-2 py-1 px-2 lh-sm  mt-3">Health</span>
-                  <a class="d-block my-4 fs-5 text-dark fw-semibold link-primary" href="">COVID outbreak deepens as more
-                    lockdowns
-                    loom in China</a>
-                  <div class="d-flex align-items-center gap-4">
-                    <div class="d-flex align-items-center gap-2">
-                      <i class="ti ti-eye text-dark fs-5"></i>9,480
-                    </div>
-                    <div class="d-flex align-items-center gap-2">
-                      <i class="ti ti-message-2 text-dark fs-5"></i>12
-                    </div>
-                    <div class="d-flex align-items-center fs-2 ms-auto">
-                      <i class="ti ti-point text-dark"></i>Sat, Dec 17
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="py-6 px-6 text-center">
-            <p class="mb-0 fs-4">Design and Developed by <a href="https://www.wrappixel.com/" target="_blank"
-                class="pe-1 text-primary text-decoration-underline">Wrappixel.com</a></p>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <script src="../assets/template/libs/jquery/dist/jquery.min.js"></script>
-  <script src="../assets/template/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/template/js/sidebarmenu.js"></script>
-  <script src="../assets/template/js/app.min.js"></script>
-  <script src="../assets/template/libs/apexcharts/dist/apexcharts.min.js"></script>
-  <script src="../assets/template/libs/simplebar/dist/simplebar.js"></script>
-  <script src="../assets/template/js/dashboard.js"></script>
-  <!-- solar icons -->
-  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
-</body>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="../assets/template/js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="../assets/template/assets//demo/chart-area-demo.js"></script>
+        <script src="../assets/template/assets//demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="../assets/template/js/datatables-simple-demo.js"></script>
+    </body>
 </html>
