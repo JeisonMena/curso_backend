@@ -18,10 +18,6 @@ require_once("layout/authHeader.php");
                         <label for="inputNombre">Nombre Completo</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input class="form-control" id="inputEmail" type="email" placeholder="Correo Electrónico" />
-                        <label for="inputEmail">Correo Electrónico</label>
-                    </div>
-                    <div class="form-floating mb-3">
                         <input class="form-control" id="inputPassword" type="password" placeholder="Contraseña" />
                         <label for="inputPassword">Contraseña</label>
                     </div>
