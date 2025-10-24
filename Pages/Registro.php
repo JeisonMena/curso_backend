@@ -1,5 +1,5 @@
 <?php
-require_once("layout/headerAuth.php");
+require_once("layout/authHeader.php");
 ?>
 <div class="row justify-content-center">
     <div class="col-lg-5">
@@ -44,5 +44,5 @@ require_once("layout/headerAuth.php");
 
 
 <?php
-require_once("layout/footerAuth.php");
+require_once("layout/authFooter.php");
 ?>

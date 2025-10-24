@@ -1,5 +1,5 @@
 <?php
-require_once("layout/headerAuth.php");
+require_once("layout/authHeader.php");
 ?>
 <!-- formulario de recuperar contrasena con el correo electronico registrado y el numero de cedula-->
 <div class="row justify-content-center">
@@ -32,5 +32,5 @@ require_once("layout/headerAuth.php");
 </div>
 
 <?php
-require_once("layout/footerAuth.php");
+require_once("layout/authFooter.php");
 ?>

@@ -1,5 +1,19 @@
 <?php
-require_once("layout/headerAuth.php");
+require_once("../system/config.php");
+
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+    $cedula = $_POST['cedulaIngresada'];
+    $password = $_POST['passIngresada'];
+
+    $query = "SELECT * FROM `usuario` WHERE cedula = '".$cedula."'";
+
+ var_dump($query);
+}
+
+
+
+
+require_once("layout/AuthHeader.php");
 ?>
 <div class="row justify-content-center">
     <div class="col-lg-5">
@@ -8,18 +22,18 @@ require_once("layout/headerAuth.php");
                 <h3 class="text-center font-weight-light my-4">Login</h3>
             </div>
             <div class="card-body">
-                <form>
+                <form method="POST">
                     <div class="form-floating mb-3">
-                        <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
-                        <label for="inputEmail">Email address</label>
+                        <input name="cedulaIngresada" class="form-control" id="inputCedula" type="text" placeholder="1234567"/>
+                        <label for="inputCedula">Cedula</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input class="form-control" id="inputPassword" type="password" placeholder="Password" />
-                        <label for="inputPassword">Password</label>
+                        <input name="passIngresada" class="form-control" id="inputPassword" type="password" placeholder="Password" />
+                        <label for="inputPassword">Clave</label>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                         <a class="small" href="RecuperarContrasena.php">¿Recuperar Contraseña?</a>
-                        <a class="btn btn-primary" href="index.html">Login</a>
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
                     </div>
                 </form>
             </div>
@@ -30,5 +44,5 @@ require_once("layout/headerAuth.php");
     </div>
 </div>
 <?php
-require_once("layout/footerAuth.php");
+require_once("layout/authFooter.php");
 ?>
