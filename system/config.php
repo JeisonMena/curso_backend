@@ -7,6 +7,7 @@ define('DB_NAME', 'proyecto_backend_db');
 
 $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
+
 if (!$conn) {
     exit("Error de conexión: " . mysqli_connect_error());
 }

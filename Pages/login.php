@@ -1,15 +1,34 @@
 <?php
 require_once("../system/config.php");
+session_start();
 
+$mensaje='';
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     $cedula = $_POST['cedulaIngresada'];
     $password = $_POST['passIngresada'];
 
-    $query = "SELECT * FROM `usuario` WHERE cedula = '".$cedula."'";
+    $query = "SELECT id_usuario, clave FROM `usuario` WHERE cedula = '".$cedula."'";
 
- var_dump($query);
+    $resultado = mysqli_query($conn, $query);
+
+    $filasEncontradas = mysqli_num_rows($resultado); //0, 1, 2, 3, 10000
+    
+    if($filasEncontradas > 0) {
+        $usuario = mysqli_fetch_assoc($resultado);
+        $passwordHash= hash("sha256", $password);
+
+        if($usuario['clave'] === $passwordHash) {
+            $_SESSION['id_usuario'] = $usuario['id_usuario'];
+            header("Location: index.php");
+            exit();
+        } else {
+            $mensaje = "Usuario no encontrado";
+        }
+
+    } else {
+        $mensaje = "Usuario no encontrado";
+    }
 }
-
 
 
 
@@ -31,6 +50,15 @@ require_once("layout/AuthHeader.php");
                         <input name="passIngresada" class="form-control" id="inputPassword" type="password" placeholder="Password" />
                         <label for="inputPassword">Clave</label>
                     </div>
+                    <?php
+                    if($mensaje != '') {
+                    ?>
+                        <div class="alert alert-danger" role="alert">
+                            <?php echo $mensaje; ?>
+                        </div>
+                    <?php
+                    }
+                    ?>
                     <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                         <a class="small" href="RecuperarContrasena.php">¿Recuperar Contraseña?</a>
                         <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
@@ -43,6 +71,7 @@ require_once("layout/AuthHeader.php");
         </div>
     </div>
 </div>
+
 <?php
 require_once("layout/authFooter.php");
 ?>
