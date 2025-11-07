@@ -1,6 +1,10 @@
 <?php
-require_once("../system/config.php");
+require_once("../system/init.php");
 session_start();
+if(isset($_SESSION['id_usuario'])) {
+    header("Location: index.php");
+    exit();
+}
 
 $mensaje='';
 if($_SERVER["REQUEST_METHOD"] == "POST") {

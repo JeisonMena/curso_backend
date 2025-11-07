@@ -1,4 +1,5 @@
 <?php
+require_once("../system/init.php");
 require_once("layout/authHeader.php");
 ?>
 <!-- formulario de recuperar contrasena con el correo electronico registrado y el numero de cedula-->
