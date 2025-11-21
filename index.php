@@ -1,6 +1,5 @@
 <?php
 require_once 'system/init.php';
-
 ?>
 <!doctype html>
 <html lang="es">
@@ -13,7 +12,6 @@ require_once 'system/init.php';
 </head>
 
 <body>
-
     <div class="container">
         <h1 class="text-center">Crea tu ticket de soporte</h1>
         <form id="formTicket" onsubmit="saveFormData(); return false;" class="row g-3">
@@ -83,7 +81,6 @@ require_once 'system/init.php';
             </div>
         </div>
     </div>
-
     <script src="assets/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
